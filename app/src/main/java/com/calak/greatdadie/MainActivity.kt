@@ -10,6 +10,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.calak.greatdadie.databinding.ActivityMainBinding
 import com.calak.libdadie.showRandomInt
+import com.calak.libstick.showAlert
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            view.showRandomInt()
+            view.showAlert("Libstick is running")
         }
     }
 
