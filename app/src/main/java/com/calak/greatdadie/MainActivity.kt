@@ -8,9 +8,8 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import com.calak.contohlib.showText
 import com.calak.greatdadie.databinding.ActivityMainBinding
-import com.calak.libdadie.showRandomInt
-import com.calak.libstick.showAlert
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            view.showAlert("Libstick is running")
+            view.showText("text 1")
         }
     }
 
